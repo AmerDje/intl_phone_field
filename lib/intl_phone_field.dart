@@ -396,7 +396,7 @@ class _IntlPhoneFieldState extends State<IntlPhoneField> {
       cursorHeight: widget.cursorHeight,
       cursorRadius: widget.cursorRadius,
       cursorWidth: widget.cursorWidth,
-      showCursor: widget.showCursor,
+      showCursor: widget.readOnly ? false : widget.showCursor,
       onFieldSubmitted: widget.onSubmitted,
       magnifierConfiguration: widget.magnifierConfiguration,
       decoration: widget.decoration.copyWith(
